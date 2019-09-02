@@ -2,10 +2,10 @@ def Transform(A):
   b = []
   k = 0
   for i in range(len(A)):
-    for j in range(0,len(A)-i):
+    for j in range(0,len(A)-i-1):
       k = i + j
       m = 0
-      for z in range(j,k+1):
+      for z in range(j,k):
         if m <= A[z]:
           m = A[z]
       b.append(m)
